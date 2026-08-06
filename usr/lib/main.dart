@@ -1,25 +1,34 @@
 import 'package:flutter/material.dart';
-import 'screens/map_screen.dart';
+import 'package:provider/provider.dart';
+import 'engine/game_state.dart';
+import 'screens/game_screen.dart';
 
 void main() {
-  runApp(const FamilyGameApp());
+  runApp(
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (_) => GameState()),
+      ],
+      child: const NannuGameApp(),
+    ),
+  );
 }
 
-class FamilyGameApp extends StatelessWidget {
-  const FamilyGameApp({super.key});
+class NannuGameApp extends StatelessWidget {
+  const NannuGameApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Family Open World',
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData.dark().copyWith(
-        primaryColor: Colors.deepPurple,
-        scaffoldBackgroundColor: const Color(0xFF121212),
+      title: 'Nannu: Open World',
+      theme: ThemeData(
+        brightness: Brightness.dark,
+        primarySwatch: Colors.blue,
+        fontFamily: 'Roboto',
       ),
       initialRoute: '/',
       routes: {
-        '/': (context) => const MapScreen(),
+        '/': (context) => const GameScreen(),
       },
     );
   }

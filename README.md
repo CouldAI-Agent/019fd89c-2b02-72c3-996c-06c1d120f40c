@@ -1,24 +1,27 @@
-# Family Open World Game
+# Nannu: Open World
 
-An open-world conceptual game built in Flutter where you play as Nannu, exploring the dynamics and residences of three major families.
+An expansive open-world RPG built in Flutter where you play as Nannu! Explore a rich neighborhood, complete missions, earn money, interact with hilarious families, and build your reputation.
 
-## Features
-- **Open World Navigation**: A Map Screen allowing you to travel between different family residences.
-- **Sharma Family (Main)**: The central family featuring Mummy, Papa, Mannu, Nannu, and Babu.
-- **Extended Sharma Family**: The bustling household featuring Bade Mama ji, Badi Mami, Diwakar, Simmo, Jyoti, Chote Mama ji, Noni, and Laddu.
-- **Bhature Family**: The lair of the three oversized vamps: Paddo, Neha, and Ekta.
-- **Gaming UI**: Dark-themed, game-inspired interface with character profiles and glowing accents.
+## Game Features
+- **Main Character**: Play as Nannu, a teen navigating life across the colony.
+- **Open World Exploration**: A top-down interactive map featuring the Sharma House, Mama House, Bhature House, School, Park, Mall, and more.
+- **Virtual Joystick**: Freely roam the map with custom joystick controls.
+- **In-Game Mobile Phone**: Access your missions, stats (Money, XP, Reputation), and inventory right from Nannu's pocket.
+- **Mission System**: 100+ planned missions. Wake up, go to school, run errands, and defeat the mischievous Bhature family.
+- **Families**:
+  - *Sharma Family (Home 1)*: Papa, Mummy, Mannu, Nannu, Babu
+  - *Sharma Family (Home 2)*: Bade Mama Ji, Badi Mami, Diwakar, Simmo, Jyoti, Chote Mama Ji, Noni, Laddu
+  - *Bhature Family*: Paddo, Neha, Ekta (The mischievous neighborhood rivals)
 
 ## Tech Stack
-- Flutter
-- Material Design
+- Flutter (Dart)
+- `provider` for Game State Management (Money, Missions, Inventory)
+- Custom Render Loop for player movement and camera tracking
 
-## Running the app
-```bash
-flutter pub get
-flutter run
-```
+## How to Run
+1. `flutter pub get`
+2. `flutter run`
 
 ---
 ## About CouldAI
-This app was generated with [CouldAI](https://could.ai), an AI app builder for cross-platform apps that turns prompts into real native iOS, Android, Web, and Desktop apps with autonomous AI agents that architect, build, test, deploy, and iterate production-ready applications.
+This application was generated using [CouldAI](https://could.ai), an AI app builder for cross-platform apps that turns prompts into real native iOS, Android, Web, and Desktop apps with autonomous AI agents that architect, build, test, deploy, and iterate production-ready applications.
