@@ -253,7 +253,7 @@ class InGamePhoneScreen extends StatelessWidget {
           appBar: AppBar(
             backgroundColor: Colors.transparent,
             elevation: 0,
-            title: const Text('Nannu\\'s Phone'),
+            title: const Text("Nannu's Phone"),
             centerTitle: true,
           ),
           body: Padding(

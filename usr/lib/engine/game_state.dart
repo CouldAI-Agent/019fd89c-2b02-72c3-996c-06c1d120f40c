@@ -36,8 +36,8 @@ class GameState extends ChangeNotifier {
   List<Mission> missions = [
     Mission(id: 'm1', title: 'Wake up', description: 'Brush teeth, eat breakfast, go to school.'),
     Mission(id: 'm2', title: 'Help Mummy', description: 'Buy groceries for mummy from the shop.'),
-    Mission(id: 'm3', title: 'Visit Mama', description: 'Visit Mama\\'s house across the colony.'),
-    Mission(id: 'm4', title: 'Prank Defense', description: 'Defeat the Bhature family\\'s prank.'),
+    Mission(id: 'm3', title: 'Visit Mama', description: "Visit Mama's house across the colony."),
+    Mission(id: 'm4', title: 'Prank Defense', description: "Defeat the Bhature family's prank."),
   ];
   
   List<InventoryItem> inventory = [
